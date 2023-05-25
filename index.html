@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- import icon package -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+    <!-- import font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <script src="Javascript/code.js"></script>
+    <script src="Javascript/swiper-bundle.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <!-- HEADER SECTION -->
+    <header class="header">
+      <nav class="nav container">
+        <a href="#home" class="nav-logo">mohamed</a>
+        <div class="nav-menu">
+          <ul class="nav-list grid">
+            <li class="nav-item">
+              <a href="#about" class="nav-link"
+                ><i class="uil uil-user nav-icon"></i> about</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#skills" class="nav-link"
+                ><i class="uil uil-file-alt nav-icon"></i> skills</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#qualifications" class="nav-link">
+                <i class="uil uil-estate nav-icon"></i> qualifications
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#services" class="nav-link"
+                ><i class="uil uil-scenery nav-icon"></i> services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#portfolio" class="nav-link"
+                ><i class="uil uil-briefcase-alt nav-icon"></i> portfolio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link"
+                ><i class="uil uil-message nav-icon"></i> contact</a
+              >
+            </li>
+          </ul>
+          <i class="uil uil-times nav-close" id="nav-close"></i>
+        </div>
+        <div class="nav-btn">
+          <div class="theme">
+            <i class="uil uil-moon change-theme" id="theme-button"></i>
+          </div>
+          <div class="nav-toggle">
+            <i class="uil uil-apps"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- HOME SECTION -->
+    <main class="main">
+      <!-- HOME -->
+      <section class="home section" id="home">
+        <div class="home-container grid">
+          <div class="home-content grid">
+            <div class="home-social">
+              <a
+                href="https://www.linkedin.com/in/mohamed-islam-arrar-527b86213/"
+                class="home-social-icon"
+                target="_blank"
+              >
+                <i class="uil uil-linkedin-alt"></i>
+              </a>
+              <a
+                href="https://github.com/Mohamed-Ararr"
+                class="home-social-icon"
+                target="_blank"
+              >
+                <i class="uil uil-github-alt"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/_mohamed.islam/"
+                class="home-social-icon"
+                target="_blank"
+              >
+                <i class="uil uil-instagram"></i>
+              </a>
+            </div>
+            <div class="home-image">
+              <svg
+                class="home-blob"
+                viewBox="0 0 200 187"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <mask id="mask0" mask-type="alpha">
+                  <path
+                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                  />
+                </mask>
+                <g mask="url(#mask0)">
+                  <path
+                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                  />
+                  <image
+                    class="home-blob-img"
+                    x="-25"
+                    y="0"
+                    href="images/home-blob-image.jpg"
+                  />
+                </g>
+              </svg>
+            </div>
+            <div class="home-data">
+              <h1 class="home-title">hi, i'm mohamed</h1>
+              <h3 class="home-subtitle">frontend / mobile developer</h3>
+              <p class="home-description">
+                hight level experience in web and mobile design with high
+                development knowledge, producing quality work.
+              </p>
+              <a href="#contact" class="button button-flex contact-button">
+                contact me <i class="uil uil-message button-icon"></i>
+              </a>
+            </div>
+          </div>
+          <div class="home-scroll">
+            <a href="#about" class="home-scroll-button button-flex">
+              <i class="uil uil-mouse-alt home-scroll-mouse"></i>
+              <span class="home-scroll-text">scroll down</span>
+              <i class="uil uil-arrow-down home-scroll-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- SCROLL DOWN ICON -->
+      <div class="scroll-down">
+        <i class="uil uil-angle-double-down"></i>
+      </div>
+      <!-- ABOUT ME -->
+      <section class="about section" id="about">
+        <h2 class="section-title">about me</h2>
+        <span class="section-subtitle">my introduction</span>
+        <div class="about-container container grid">
+          <img
+            src="images/about-me.jpg"
+            alt="about me image"
+            class="about-image"
+          />
+          <div class="about-data">
+            <p class="about-description">
+              Experienced frontend and mobile developer skilled in creating
+              immersive user experiences. Strong expertise in modern web
+              technologies and mobile app development.
+            </p>
+            <div class="about-stats">
+              <div class="about-stat-box box">
+                <span class="about-info">01+</span>
+                <span class="about-info-title">year(s)<br />experience</span>
+              </div>
+              <div class="about-stat-box box">
+                <span class="about-info">10+</span>
+                <span class="about-info-title">completed<br />projects</span>
+              </div>
+              <div class="about-stat-box box">
+                <span class="about-info">01+</span>
+                <span class="about-info-title">companies<br />worked</span>
+              </div>
+            </div>
+            <div class="about-button">
+              <a
+                download=""
+                href="Assets/Flutter Developer CV 2.pdf"
+                class="button download-cv-button button-flex"
+                >download CV <i class="uil uil-download-alt button-icon"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SKILLS -->
+      <section class="skills section" id="skills">
+        <h2 class="section-title">skills</h2>
+        <span class="section-subtitle">my technical level</span>
+        <div class="skills-container container grid">
+          <!-- SKILL ONE -->
+          <div class="skills-content skill-close">
+            <div class="skills-header">
+              <i class="uil uil-brackets-curly skills-icon"></i>
+              <div>
+                <h2 class="skills-title">Mobile developer</h2>
+                <span class="skills-subtitle">more than 1 year</span>
+              </div>
+              <i class="uil uil-angle-down skills-arrow"></i>
+            </div>
+            <div class="skills-list grid">
+              <div class="skills-data">
+                <div class="skills-titles">
+                  <h3 class="skills-name">flutter</h3>
+                  <span class="skills-percentage">80%</span>
+                </div>
+                <div class="skills-progress">
+                  <span class="skills-progress-bar skills-flutter"></span>
+                </div>
+              </div>
+              <div class="skills-data">
+                <div class="skills-titles">
+                  <h3 class="skills-name">dart</h3>
+                  <span class="skills-percentage">70%</span>
+                </div>
+                <div class="skills-progress">
+                  <span class="skills-progress-bar skills-dart"></span>
+                </div>
+              </div>
+              <div class="skills-data">
+                <div class="skills-titles">
+                  <h3 class="skills-name">clean architecture</h3>
+                  <span class="skills-percentage">70%</span>
+                </div>
+                <div class="skills-progress">
+                  <span class="skills-progress-bar skills-c-a"></span>
+                </div>
+              </div>
+              <div class="skills-data">
+                <div class="skills-titles">
+                  <h3 class="skills-name">state management</h3>
+                  <span class="skills-percentage">65%</span>
+                </div>
+                <div class="skills-progress">
+                  <span class="skills-progress-bar skills-s-m"></span>
+                </div>
+              </div>
+              <div class="skills-data">
+                <div class="skills-titles">
+                  <h3 class="skills-name">firebase</h3>
+                  <span class="skills-percentage">40%</span>
+                </div>
+                <div class="skills-progress">
+                  <span class="skills-progress-bar skills-firebase"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- SKILL TWO -->
+          <div class="skills-content skill-close">
+            <div class="skills-header">
+              <i class="uil uil-server-network skills-icon"></i>
+              <div>
+                <h2 class="skills-title">frontend developer</h2>
+                <span class="skills-subtitle">more than 1 year</span>
+              </div>
+              <i class="uil uil-angle-down skills-arrow"></i>
+            </div>
+            <div class="skills-list grid">
+              <div class="skills-data">
+                <div class="skills-titles">
+                  <h3 class="skills-name">HTML</h3>
+                  <span class="skills-percentage">90%</span>
+                </div>
+                <div class="skills-progress">
+                  <span class="skills-progress-bar skills-html"></span>
+                </div>
+              </div>
+              <div class="skills-data">
+                <div class="skills-titles">
+                  <h3 class="skills-name">CSS</h3>
+                  <span class="skills-percentage">80%</span>
+                </div>
+                <div class="skills-progress">
+                  <span class="skills-progress-bar skills-css"></span>
+                </div>
+              </div>
+              <div class="skills-data">
+                <div class="skills-titles">
+                  <h3 class="skills-name">SASS</h3>
+                  <span class="skills-percentage">70%</span>
+                </div>
+                <div class="skills-progress">
+                  <span class="skills-progress-bar skills-sass"></span>
+                </div>
+              </div>
+              <div class="skills-data">
+                <div class="skills-titles">
+                  <h3 class="skills-name">javascript</h3>
+                  <span class="skills-percentage">60%</span>
+                </div>
+                <div class="skills-progress">
+                  <span class="skills-progress-bar skills-js"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- SKILL THREE -->
+          <div class="skills-content skill-close">
+            <div class="skills-header">
+              <i class="uil uil-swatchbook skills-icon"></i>
+              <div>
+                <h2 class="skills-title">UI / UX designer</h2>
+                <span class="skills-subtitle">more than 1 year</span>
+              </div>
+              <i class="uil uil-angle-down skills-arrow"></i>
+            </div>
+            <div class="skills-list grid">
+              <div class="skills-data">
+                <div class="skills-titles">
+                  <h3 class="skills-name">figma</h3>
+                  <span class="skills-percentage">80%</span>
+                </div>
+                <div class="skills-progress">
+                  <span class="skills-progress-bar skills-figma"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- SKILL FOUR -->
+          <div class="skills-content skill-close">
+            <div class="skills-header">
+              <i class="uil uil-microsoft skills-icon"></i>
+              <div>
+                <h2 class="skills-title">MS office</h2>
+                <span class="skills-subtitle">more than 2 years</span>
+              </div>
+              <i class="uil uil-angle-down skills-arrow"></i>
+            </div>
+            <div class="skills-list grid">
+              <div class="skills-data">
+                <div class="skills-titles">
+                  <h3 class="skills-name">MS word</h3>
+                  <span class="skills-percentage">80%</span>
+                </div>
+                <div class="skills-progress">
+                  <span class="skills-progress-bar skills-word"></span>
+                </div>
+              </div>
+              <div class="skills-data">
+                <div class="skills-titles">
+                  <h3 class="skills-name">MS excel</h3>
+                  <span class="skills-percentage">70%</span>
+                </div>
+                <div class="skills-progress">
+                  <span class="skills-progress-bar skills-excel"></span>
+                </div>
+              </div>
+              <div class="skills-data">
+                <div class="skills-titles">
+                  <h3 class="skills-name">MS powerPoint</h3>
+                  <span class="skills-percentage">50%</span>
+                </div>
+                <div class="skills-progress">
+                  <span class="skills-progress-bar skills-powerpoint"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- QUALIFICATIONS -->
+      <section class="qualifications section" id="qualifications">
+        <h2 class="section-title">qualifications</h2>
+        <span class="section-subtitle">my personal journey</span>
+        <div class="qualifications-container container">
+          <div class="qualifications-tabs">
+            <div
+              class="qualifications-button button-flex qualifications-active"
+              data-target="#education"
+            >
+              <i class="uil uil-graduation-cap qualifications-icon"></i>
+              education
+            </div>
+            <div class="qualifications-button button-flex" data-target="#work">
+              <i class="uil uil-briefcase-alt qualifications-icon"></i>
+              work
+            </div>
+          </div>
+          <div class="qualifications-sections">
+            <!-- QUALIFICATIONS CONTENT 1 -->
+            <div
+              class="qualifications-content qualifications-active"
+              data-content
+              id="education"
+            >
+              <!-- QUALIFICATIONS 1 -->
+              <div class="qualifications-data">
+                <div>
+                  <h3 class="qualifications-title">nature science</h3>
+                  <span class="qualifications-subtitle"
+                    >tadjenanet - high school</span
+                  >
+                  <div class="qualifications-calender">
+                    <i class="uil uil-calendar-alt calender-icon"></i>
+                    2016 - 2019
+                  </div>
+                </div>
+                <div>
+                  <span class="qualifications-rounder"></span>
+                  <span class="qualifications-line"></span>
+                </div>
+              </div>
+              <!-- QUALIFICATIONS 2 -->
+              <div class="qualifications-data">
+                <div></div>
+                <div>
+                  <span class="qualifications-rounder"></span>
+                  <span class="qualifications-line"></span>
+                </div>
+                <div>
+                  <h3 class="qualifications-title">computer science</h3>
+                  <span class="qualifications-subtitle"
+                    >constantine - university</span
+                  >
+                  <div class="qualifications-calender">
+                    <i class="uil uil-calendar-alt calender-icon"></i>
+                    2019 - 2022
+                  </div>
+                </div>
+              </div>
+              <!-- QUALIFICATIONS 3 -->
+              <div class="qualifications-data">
+                <div>
+                  <h3 class="qualifications-title">frontend development</h3>
+                  <span class="qualifications-subtitle"
+                    >tadjenanet - online classes</span
+                  >
+                  <div class="qualifications-calender">
+                    <i class="uil uil-calendar-alt calender-icon"></i>
+                    2021 - present
+                  </div>
+                </div>
+                <div>
+                  <span class="qualifications-rounder"></span>
+                  <span class="qualifications-line"></span>
+                </div>
+              </div>
+              <!-- QUALIFICATIONS 4 -->
+              <div class="qualifications-data">
+                <div></div>
+                <div>
+                  <span class="qualifications-rounder"></span>
+                  <span class="qualifications-line"></span>
+                </div>
+                <div>
+                  <h3 class="qualifications-title">mobile development</h3>
+                  <span class="qualifications-subtitle"
+                    >tadjenanet - online classes</span
+                  >
+                  <div class="qualifications-calender">
+                    <i class="uil uil-calendar-alt calender-icon"></i>
+                    2022 - present
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- QUALIFICATIONS CONTENT 2 -->
+            <div class="qualifications-content" data-content id="work">
+              <!-- QUALIFICATIONS 1 -->
+              <div class="qualifications-data">
+                <div>
+                  <h3 class="qualifications-title">internet library manager</h3>
+                  <span class="qualifications-subtitle">tadjenanet</span>
+                  <div class="qualifications-calender">
+                    <i class="uil uil-calendar-alt calender-icon"></i>
+                    2017 - 2019
+                  </div>
+                </div>
+                <div>
+                  <span class="qualifications-rounder"></span>
+                  <span class="qualifications-line"></span>
+                </div>
+              </div>
+              <!-- QUALIFICATIONS 2 -->
+              <div class="qualifications-data">
+                <div></div>
+                <div>
+                  <span class="qualifications-rounder"></span>
+                  <span class="qualifications-line"></span>
+                </div>
+                <div>
+                  <h3 class="qualifications-title">Soft drinks factory</h3>
+                  <span class="qualifications-subtitle"
+                    >tadjenanet - bouguerra groups</span
+                  >
+                  <div class="qualifications-calender">
+                    <i class="uil uil-calendar-alt calender-icon"></i>
+                    2019 - 2020
+                  </div>
+                </div>
+              </div>
+              <!-- QUALIFICATIONS 3 -->
+              <div class="qualifications-data">
+                <div>
+                  <h3 class="qualifications-title">freelance</h3>
+                  <span class="qualifications-subtitle"
+                    >tadjenanet - freelancer</span
+                  >
+                  <div class="qualifications-calender">
+                    <i class="uil uil-calendar-alt calender-icon"></i>
+                    2021 - present
+                  </div>
+                </div>
+                <div>
+                  <span class="qualifications-rounder"></span>
+                  <span class="qualifications-line"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SERVICES -->
+      <section class="services section" id="services">
+        <h2 class="section-title">services</h2>
+        <span class="section-subtitle">what i offer</span>
+        <div class="services-container container grid">
+          <!-- Service One -->
+          <div class="service-content">
+            <div class="service-header">
+              <i class="uil uil-arrow services-icon"></i>
+              <h3 class="services-title">flutter developer</h3>
+            </div>
+            <span
+              class="button button-flex button-small button-link services-button"
+            >
+              view more <i class="uil uil-arrow-right button-icon"></i>
+            </span>
+            <div class="services-modal">
+              <div class="services-modal-content">
+                <div class="services-modal-content-header">
+                  <h4 class="services-modal-title">flutter developer</h4>
+                  <i class="uil uil-times services-modal-close"></i>
+                </div>
+                <ul class="services-modal-services grid">
+                  <li class="services-modal-services">
+                    <i class="uil uil-check-circle services-modal-icon"></i>
+                    <p>i develop cross platform mobile applications.</p>
+                  </li>
+                  <li class="services-modal-services">
+                    <i class="uil uil-check-circle services-modal-icon"></i>
+                    <p>I transfer and emulate UI design to flutter code.</p>
+                  </li>
+                  <li class="services-modal-services">
+                    <i class="uil uil-check-circle services-modal-icon"></i>
+                    <p>
+                      design and build sophisticated and highly scalable apps.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Service Two -->
+          <div class="service-content">
+            <div class="service-header">
+              <i class="uil uil-pen services-icon"></i>
+              <h3 class="services-title">UI/UX developer</h3>
+            </div>
+            <span
+              class="button button-flex button-small button-link services-button"
+            >
+              view more <i class="uil uil-arrow-right button-icon"></i>
+            </span>
+            <div class="services-modal">
+              <div class="services-modal-content">
+                <div class="services-modal-content-header">
+                  <h4 class="services-modal-title">UI/UX developer</h4>
+                  <i class="uil uil-times services-modal-close"></i>
+                </div>
+                <ul class="services-modal-services grid">
+                  <li class="services-modal-services">
+                    <i class="uil uil-check-circle services-modal-icon"></i>
+                    <p>i build modern user interfaces.</p>
+                  </li>
+                  <li class="services-modal-services">
+                    <i class="uil uil-check-circle services-modal-icon"></i>
+                    <p>
+                      i create both functional and visually appealing features.
+                    </p>
+                  </li>
+                  <li class="services-modal-services">
+                    <i class="uil uil-check-circle services-modal-icon"></i>
+                    <p>i improve the overall user experience.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Service Three -->
+          <div class="service-content">
+            <div class="service-header">
+              <i class="uil uil-window-grid services-icon"></i>
+              <h3 class="services-title">frontend developer</h3>
+            </div>
+            <span
+              class="button button-flex button-small button-link services-button"
+            >
+              view more <i class="uil uil-arrow-right button-icon"></i>
+            </span>
+            <div class="services-modal">
+              <div class="services-modal-content">
+                <div class="services-modal-content-header">
+                  <h4 class="services-modal-title">frontend developer</h4>
+                  <i class="uil uil-times services-modal-close"></i>
+                </div>
+                <ul class="services-modal-services grid">
+                  <li class="services-modal-services">
+                    <i class="uil uil-check-circle services-modal-icon"></i>
+                    <p>Designing and coding the appearance of a website.</p>
+                  </li>
+                  <li class="services-modal-services">
+                    <i class="uil uil-check-circle services-modal-icon"></i>
+                    <p>i ensure debugging and troubleshooting to fix bugs.</p>
+                  </li>
+                  <li class="services-modal-services">
+                    <i class="uil uil-check-circle services-modal-icon"></i>
+                    <p>i ensure user interaction.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Service Four -->
+          <div class="service-content">
+            <div class="service-header">
+              <i class="uil uil-microsoft services-icon"></i>
+              <h3 class="services-title">MS softwares</h3>
+            </div>
+            <span
+              class="button button-flex button-small button-link services-button"
+            >
+              view more <i class="uil uil-arrow-right button-icon"></i>
+            </span>
+            <div class="services-modal">
+              <div class="services-modal-content">
+                <div class="services-modal-content-header">
+                  <h4 class="services-modal-title">MS softwares</h4>
+                  <i class="uil uil-times services-modal-close"></i>
+                </div>
+                <ul class="services-modal-services grid">
+                  <li class="services-modal-services">
+                    <i class="uil uil-check-circle services-modal-icon"></i>
+                    <p>Content writing.</p>
+                  </li>
+                  <li class="services-modal-services">
+                    <i class="uil uil-check-circle services-modal-icon"></i>
+                    <p>Administrative assistants..</p>
+                  </li>
+                  <li class="services-modal-services">
+                    <i class="uil uil-check-circle services-modal-icon"></i>
+                    <p>Using excel for accounting.</p>
+                  </li>
+                  <li class="services-modal-services">
+                    <i class="uil uil-check-circle services-modal-icon"></i>
+                    <p>Presentation Designer.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- PORTFOLIO -->
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section-title">portfolio</h2>
+        <span class="section-subtitle">my recent work</span>
+        <div class="portfolio-container container swiper-container">
+          <div class="swiper-wrapper">
+            <!-- Portfolio One -->
+            <div class="portfolio-content grid swiper-slide">
+              <img
+                class="portfolio-img"
+                src="images/portfolio-one.png"
+                alt="portfolio-one"
+              />
+              <div class="portfolio-data">
+                <h3 class="portfolio-title">ShareLife website</h3>
+                <p class="portfolio-description">
+                  adaptable and fully responsive to all devices. with UI
+                  components and animated interactions.
+                </p>
+                <a
+                  href="https://github.com/Mohamed-Ararr/sharelife.github.io"
+                  target="_blank"
+                  class="button button-flex portfolio-button"
+                >
+                  check github
+                  <i class="uil uil-github-alt button-icon"></i
+                ></a>
+              </div>
+            </div>
+            <!-- Portfolio Two -->
+            <div class="portfolio-content grid swiper-slide">
+              <img
+                class="portfolio-img"
+                src="images/portfolio-two.png"
+                alt="portfolio-three"
+              />
+              <div class="portfolio-data">
+                <h3 class="portfolio-title">Custom Login form</h3>
+                <p class="portfolio-description">
+                  adaptable login form and fully responsive to all devices.
+                </p>
+                <a
+                  href="https://mohamed-ararr.github.io/login-form/"
+                  target="_blank"
+                  class="button button-flex portfolio-button"
+                >
+                  check github
+                  <i class="uil uil-github-alt button-icon"></i
+                ></a>
+              </div>
+            </div>
+            <!-- Portfolio Three -->
+            <div class="portfolio-content grid swiper-slide">
+              <img
+                class="portfolio-img"
+                src="images/portfolio-three.png"
+                alt="portfolio-three"
+              />
+              <div class="portfolio-data">
+                <h3 class="portfolio-title">dashboard stats website</h3>
+                <p class="portfolio-description">
+                  dashboard adaptable and fully responsive to all devices.
+                </p>
+                <a
+                  href="https://mohamed-ararr.github.io/dashboard.github.io/"
+                  target="_blank"
+                  class="button button-flex portfolio-button"
+                >
+                  check github
+                  <i class="uil uil-github-alt button-icon"></i
+                ></a>
+              </div>
+            </div>
+            <div class="portfolio-content grid swiper-slide">
+              <img
+                class="portfolio-img"
+                src="images/loading.jpg"
+                alt="loading picture"
+              />
+              <div class="portfolio-data">
+                <h3 class="portfolio-title">more projects on the way</h3>
+                <p class="portfolio-description">
+                  visit my github account to see all available projects.
+                </p>
+                <a
+                  href="https://github.com/Mohamed-Ararr"
+                  target="_blank"
+                  class="button button-flex portfolio-button"
+                >
+                  github acc
+                  <i class="uil uil-github-alt button-icon"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next">
+            <i class="uil uil-angle-right swiper-portfolio-icon"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="uil uil-angle-left swiper-portfolio-icon"></i>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <!-- YOU HAVE A NEW PROJECT -->
+      <section class="new-project container section">
+        <div class="new-project-container container">
+          <h2>you have a new project</h2>
+          <p>
+            contact me now and get a 20% discount for your first project made by
+            me
+          </p>
+          <a href="#contact" class="button button-flex new-project-button">
+            Contact me
+            <i class="uil uil-message button-icon"></i
+          ></a>
+        </div>
+      </section>
+      <!-- CONTACT ME SECTION -->
+      <section class="contact section" id="contact">
+        <h2 class="section-title">contact me</h2>
+        <span class="section-subtitle">get in touch</span>
+        <div class="contact-container container">
+          <div class="contact-content">
+            <div class="personal-contacts">
+              <div class="personal-contact phone-contact">
+                <i class="uil uil-phone contact-icon"></i>
+                <div class="contact-info">
+                  <p>call me</p>
+                  <span class="phone-number">+213 793 32 54 99</span>
+                </div>
+              </div>
+              <div class="personal-contact email-contact">
+                <i class="uil uil-envelope-alt contact-icon"></i>
+                <div class="contact-info">
+                  <p>email</p>
+                  <span class="email-add" style="text-transform: initial"
+                    >mohamedarrar953@gmail.com</span
+                  >
+                </div>
+              </div>
+              <div class="personal-contact location-contact">
+                <i class="uil uil-map-marker contact-icon"></i>
+                <div class="contact-info">
+                  <p>location</p>
+                  <span class="location">Algeria - Mila - Tadjenanet</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+      <div>
+        <h2 class="section-title">mohamed</h2>
+        <span class="section-subtitle">frontend / mobile developer</span>
+      </div>
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-socials">
+            <a
+              href="https://www.linkedin.com/in/mohamed-islam-arrar-527b86213/"
+              class="home-social-icon"
+              target="_blank"
+            >
+              <i class="uil uil-linkedin-alt"></i>
+            </a>
+            <a
+              href="https://github.com/Mohamed-Ararr"
+              class="home-social-icon"
+              target="_blank"
+            >
+              <i class="uil uil-github-alt"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/_mohamed.islam/"
+              class="home-social-icon"
+              target="_blank"
+            >
+              <i class="uil uil-instagram"></i>
+            </a>
+          </div>
+          <p class="copy-rights"></p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
