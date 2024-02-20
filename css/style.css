@@ -536,6 +536,9 @@ main .skills-container .skills-content .skills-list .skills-data .skills-progres
 main .skills-container .skills-content .skills-list .skills-data .skills-progress .skills-js {
   width: 60%;
 }
+main .skills-container .skills-content .skills-list .skills-data .skills-progress .skills-rjs {
+  width: 60%;
+}
 main .skills-container .skills-content .skills-list .skills-data .skills-progress .skills-figma {
   width: 80%;
 }
@@ -543,7 +546,7 @@ main .skills-container .skills-content .skills-list .skills-data .skills-progres
   width: 80%;
 }
 main .skills-container .skills-content .skills-list .skills-data .skills-progress .skills-excel {
-  width: 70%;
+  width: 85%;
 }
 main .skills-container .skills-content .skills-list .skills-data .skills-progress .skills-powerpoint {
   width: 60%;
